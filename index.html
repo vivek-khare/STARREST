@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="favicon.ico">
+<!--Todo: Place the right favicon -->
+
+<title>RESTful Services Microsite</title>
+
+<!-- Bootstrap core CSS -->
+<!-- <link href="./dist/css/bootstrap.min.css" rel="stylesheet"> -->
+<link href="frameworks/bootstrap-3.3.5/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!-- Custom styles for this template -->
+<link href="carousel.css" rel="stylesheet">
+
+<!-- Custom styles from Infosys -->
+<link href="custom.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+	<!--<div class="modal fade" id="contiousDeploy" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title alert alert-info">Run everywhere</h4>
+				</div>
+				<div class="modal-body">
+					Regardless of kernel version<br /> Regardless of host distro<br />
+					Physical or virtual, cloud or not<br /> Container and host
+					architecture must match
+				</div>
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title alert alert-info">Run anything</h4>
+				</div>
+				<div class="modal-body">
+					If it can run on the host, it can run in the container<br /> If it
+					can on a Linux kernel, it can run
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+	<!--<div class="modal fade" id="contiousDeploy2" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title alert alert-info">What is DevOps ?</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						<img src="img/docker1.png" height="50%" width="50%" /> <img
+							src="img/docker2.png" height="50%" width="50%" />
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+	<div class="navbar-wrapper"
+		style="border: 0px solid white; margin-bottom: 0px; padding-bottom: 0px">
+		<div class="container">
+
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#stats">Home</a></li>
+							<li><a href="rest-faqs.html" style="color: orange">REST
+									FAQs</a></li>
+							<li><a href="points-of-contact.html" style="color: orange">Point
+									of Contacts</a></li>
+							<li><a href="site-stats.html" style="color: orange">Site
+									Statistics</a></li>
+							<li><a href="about.html" style="color: orange">About STAR Portal</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+		</div>
+	</div>
+
+
+	<!-- Carousel
+================================================== -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active" style="background-color: rgb(0, 51, 153);">
+				<!-- <img class="first-slide"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                 alt="First slide">
+                 -->
+
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>What is REST ?</h1>
+
+						<p>REST stands for Representational State Transfer. It is an architecture pattern which provides constraints for creating distributed and interoperable web services which are stateless and are uniquely identifiable by a URI. REST uses the common HTTP methods like GET, POST, PUT, DELETE and HEAD to provide the CRUD operations for the resources represented by the REST services. Go through the session recording to understand in detail about REST architectural pattern and its practical implementation using Jersey framework and Eclipse.   </p>
+
+						<!--<p>
+							<a class="btn btn-lg btn-primary" href="http://teamwiki/DevOps">Learn more</a>
+						</p>-->
+					</div>
+				</div>
+			</div>
+			<div class="item" style="background-color: rgb(0, 66, 0);">
+
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>The Origin of REST</h1>
+						<p>The term REST was coined and explained by Roy Fielding, in his PhD thesis titled 'Architectural Styles and the Design of Network-based Software Architectures'. Roy had earlier served as chairman of the Apache Software Foundation. Download Roy Fielding PhD thesis on REST by clicking the button below. </p>
+						<p>
+							<a class="btn btn-lg btn-primary" href="#"
+								onclick="javascript:downloadFn('Roy PhD Thesis','fielding_dissertation.pdf')">Download</a>&nbsp;
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" role="button"
+			data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
+			aria-hidden="true"></span> <span class="sr-only">Previous</span>
+		</a> <a class="right carousel-control" href="#myCarousel" role="button"
+			data-slide="next"> <span
+			class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<!-- /.carousel -->
+
+
+	<!-- Marketing messaging and featurettes
+================================================== -->
+	<!-- Wrap the rest of the page in another container to center all the content. -->
+
+	<div class="container marketing"
+		style="border: 0px solid blue; margin-top: 0px">
+
+		<!-- Three columns of text below the carousel -->
+		<div class="row">
+			<div class="col-lg-4" style="border: 0px solid blue">
+				<img class="" src="img/m1.png" width="140px">
+
+				<h2 style="color: maroon">Session Deck</h2>
+
+				<p>This is a full presentation deck on RESTful services. It covers the core  
+					concepts of RESTful services, Tools and Technologies Used.</p>
+
+				<p>
+					<a class="btn btn-default" href="#" role="button"
+						onclick="javascript:downloadFn('REST Deck','RESTful Services with Java_3-oct-2016.pdf')">Download
+						&raquo;</a>
+				</p>
+			</div>
+			<!-- /.col-lg-4 -->
+			<div class="col-lg-4" style="border: 0px solid blue">
+				<img class="" src="img/m2.png" width="140px">
+
+				<h2 style="color: maroon">Session Code Files</h2>
+
+				<p>Download the eclipse project archive zip of code related to three projects demonstrated during the session.</p>
+
+				<p>
+					<a class="btn btn-default" href="" role="button"
+					onclick="javascript:downloadFn('REST Code','rest-session-code-3-oct-2016.zip')">Download&raquo;</a>
+				</p>
+			</div>
+			<!-- /.col-lg-4 -->
+			<div class="col-lg-4" style="border: 0px solid blue">
+				<img class="" src="img/m3.png" width="140px">
+
+				<h2 style="color: maroon">Session Recording</h2>
+
+				<p>The video recording of the session, including the questions asked. This is mp4 file, please make sure you have appropriate player to play it.</p>
+
+				<p>
+					<a class="btn btn-default" href="" role="button"
+						onclick="javascript:downloadFn('REST Session Video','RESTful Webservices with Java 3-OCT-2016.mp4')">Download&raquo;</a>
+				</p>
+			</div>
+			<!-- /.col-lg-4 -->
+		</div>
+		<!-- /.row -->
+
+
+		<!-- START THE FEATURETTES -->
+
+		<hr class="featurette-divider">
+
+
+	</div>
+	<!-- /.container -->
+
+
+	<!-- Bootstrap core JavaScript
+================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- <script src="./dist/js/bootstrap.min.js"></script> -->
+	<script src="frameworks/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<!-- <script src="./assets/js/ie10-viewport-bug-workaround.js"></script> -->
+	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+	<script>
+
+		 $(document).ready(function() {
+
+		 $.ajax({
+		 url : '/microsites/rest/	/updateVisitorStats/rest',
+		 type : 'GET',
+		 success : function(result) {
+		 console.log("visit updated in DB");
+		 }
+		 });
+
+		 $.ajax({
+	            url: '/microsites/rest/micrositepagevisit/insertPageStats?pageName=index&visitType=Page%20Visit&siteName=rest',
+	            type: 'GET',
+	            success: function (result) {
+	                console.log("page type updated in DB");
+	            }
+	        });
+			});
+			
+		function downloadFn(downloadName, downloadFile) {
+
+		$.ajax({
+		    url: '/microsites/rest/micrositepagevisit/insertPageStats?pageName='+downloadName+'&visitType=Download&siteName=rest',
+		    type: 'GET',
+		    success: function(result) {
+		        console.log("download type updated in DB "+downloadName);
+		    }
+		});
+
+			window.open(downloadFile, 'newwindow');
+
+			return false;
+		}
+		
+	</script>
+</body>
+</html>

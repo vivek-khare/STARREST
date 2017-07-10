@@ -1,0 +1,126 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0036)http://star/microservices/about.html -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+     
+<META charset="utf-8">     
+<META http-equiv="X-UA-Compatible" content="IE=edge">     
+<META name="viewport" content="width=device-width, initial-scale=1">     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --> 
+    
+<META name="description" content="">     
+<META name="author" content="">     <LINK href="favicon.ico" rel="icon">     <!--Todo: Place the right favicon --> 
+    <TITLE>About STAR Portal</TITLE>     <!-- Bootstrap core CSS -->     <!-- <link href="./dist/css/bootstrap.min.css" rel="stylesheet"> --> 
+    <LINK href="frameworks/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet"> 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --> 
+    <!--[if lt IE 9]>
+    <script src="frameworks/misc/html5shiv.min.js"></script>
+    <script src="frameworks/misc/respond.min.js"></script>
+    <![endif]--> 
+    <!-- Custom styles for this template -->     <LINK href="carousel.css" 
+rel="stylesheet">     <!-- Custom styles from Infosys -->     <LINK href="custom.css" 
+rel="stylesheet"> 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18450"></HEAD> <!-- NAVBAR
+================================================== --> 
+<BODY>
+<!--<DIV class="navbar-wrapper" style="border: 0px solid white; border-image: none; padding-bottom: 0px; margin-bottom: 0px;">
+<DIV class="container" style="border: 0px solid red; border-image: none;"><NAV 
+class="navbar navbar-inverse navbar-static-top">
+<DIV class="container">
+<DIV class="navbar-collapse collapse" id="navbar">
+    <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rest-faqs.html" style="color: orange">REST
+                FAQs</a></li>
+        <li><a href="points-of-contact.html" style="color: orange">Point
+                of Contacts</a></li>
+        <li><a href="site-stats.html" style="color: orange">Site
+                Statistics</a></li>
+        <li class="active"><a href="#" style="color: orange">About STAR Portal</a></li>
+    </ul>
+</DIV></DIV></NAV><BR>-->
+<div class="navbar-wrapper"
+		style="border: 0px solid white; margin-bottom: 0px; padding-bottom: 0px">
+		<div class="container">
+
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li ><a href="index.html" style="color: orange">Home</a></li>
+							<li><a href="rest-faqs.html" style="color: orange">REST
+									FAQs</a></li>
+							<li><a href="points-of-contact.html" style="color: orange">Point
+									of Contacts</a></li>
+							<li><a href="site-stats.html" style="color: orange">Site
+									Statistics</a></li>
+							<li class="active"><a href="#stats">About 
+                                STAR Portal</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+		<!--</div>
+	</div>-->
+<H3 style="text-align: left; color: maroon;">Visit Us at STAR Portal</H3>
+<HR class="featurette-divider" style="margin-top: -5px; margin-bottom: 0px; border-top-color: maroon; border-top-width: 1px; border-top-style: solid;">
+
+<P style="padding-left: 15px;">Eager to find out content from STAR Group. Visit 
+us at <A href="http://fsi-star/SitePages/Home.aspx">STAR Portal</A>. The portal 
+is flush with content on STAR Offerings, Technology Presentation Decks, 
+Initatives and Presales Decks</P><BR><BR>
+<H3 style="text-align: left; color: maroon;">Technology Used</H3>
+<HR class="featurette-divider" style="margin-top: -5px; margin-bottom: 0px; border-top-color: maroon; border-top-width: 1px; border-top-style: solid;">
+
+<P style="padding-left: 15px;">This microsite is hosted by STAR Group. It is 
+created using Bootstrap, JQuery and AngularJS. It uses Jersey REST for 
+webservices. It is deployed on Tomcat</P><BR><BR>
+<H3 style="text-align: left; color: maroon;">Developers</H3>
+<HR class="featurette-divider" style="margin-top: -5px; margin-bottom: 0px; border-top-color: maroon; border-top-width: 1px; border-top-style: solid;">
+
+<P style="padding-left: 15px;">Designed and Developed end-to-end by 
+mahesh_kp@infosys.com. Please send us an email if you find any bugs or difficuty 
+accessing the site.</P><BR><BR>
+<HR class="featurette-divider">
+</DIV></DIV>
+<SCRIPT>
+    function toggleQuestion(object) {
+        alert('hello' + object);
+        object.attr("class", "glyphicon glyphicon-plus");
+
+    }
+</SCRIPT>
+ <!-- START THE FEATURETTES --> <!-- /.container --> <!-- Bootstrap core JavaScript
+================================================== --> <!-- Placed at the end of the document so the pages load faster --> 
+<script src="frameworks/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+<!-- <script src="./dist/js/bootstrap.min.js"></script> -->
+<script src="frameworks/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<SCRIPT src="assets/js/ie10-viewport-bug-workaround.js"></SCRIPT>
+ 
+<SCRIPT>
+    $(document).ready(function () {
+
+        $.ajax({
+            url: '/microsites/rest/micrositevisitor/updateVisitorStats?micrositeName=rest',
+            type: 'GET',
+            success: function(result) {
+                console.log("visit updated in DB");
+            }
+        });
+
+        $.ajax({
+            url: '/microsites/rest/micrositepagevisit/insertPageStats?pageName=About&visitType=Page%20Visit&siteName=rest',
+            type: 'GET',
+            success: function(result) {
+                console.log("page type updated in DB");
+            }
+        });
+
+
+
+    });
+
+</SCRIPT>
+ <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> <!-- <script src="./assets/js/ie10-viewport-bug-workaround.js"></script> --> 
+
+ </BODY></HTML>

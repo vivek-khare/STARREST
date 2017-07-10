@@ -1,0 +1,210 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0038)http://star/microservices/ms-faqs.html -->
+<!DOCTYPE html PUBLIC "" "">
+<HTML lang="en">
+
+<HEAD>
+    <META content="IE=11.0000" http-equiv="X-UA-Compatible">
+
+    <META charset="utf-8">
+    <META http-equiv="X-UA-Compatible" content="IE=edge">
+    <META name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <META name="description" content="">
+    <META name="author" content="">
+    <LINK href="favicon.ico" rel="icon">
+    <!--Todo: Place the right favicon -->
+    <TITLE>REST FAQs</TITLE>
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="./dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <LINK href="frameworks/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="frameworks/misc/html5shiv.min.js"></script>
+    <script src="frameworks/misc/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
+    <LINK href="carousel.css" rel="stylesheet">
+    <!-- Custom styles from Infosys -->
+    <LINK href="custom.css" rel="stylesheet">
+    <META name="GENERATOR" content="MSHTML 11.00.9600.18450">
+</HEAD>
+<!-- NAVBAR
+================================================== -->
+
+<BODY>
+    <DIV class="navbar-wrapper" style="border: 0px solid white; border-image: none; padding-bottom: 0px; margin-bottom: 0px;">
+        <DIV class="container" style="border: 0px solid red; border-image: none;">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html" style="color: orange">Home</a></li>
+                            <li class="active"><a href="#stats">REST
+									FAQs</a></li>
+                            <li><a href="points-of-contact.html" style="color: orange">Point
+									of Contacts</a></li>
+                            <li><a href="site-stats.html" style="color: orange">Site
+									Statistics</a></li>
+                            <li><a href="about.html" style="color: orange">About STAR Portal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <BR>
+            <H1 style="text-align: center; color: maroon;">RESTful Services : Frequently Asked Questions
+            </H1>
+            <HR class="featurette-divider" style="margin-top: -5px; border-top-color: maroon; border-top-width: 1px; border-top-style: solid;">
+
+            <H2>About REST</H2>
+            <BUTTON class="btn btn-info question" type="button" data-toggle="collapse" data-target="#q1"><SPAN class="glyphicon glyphicon-plus" 
+onclick="$(this).toggleClass('glyphicon-plus');$(this).toggleClass('glyphicon-minus');"></SPAN> 
+           &nbsp;            Is REST a name of a technology?         
+</BUTTON>
+            <DIV class="collapse" id="q1"> REST is not a name for a technology. REST stands for Representational (RE) State (S) Transfer (T). It is a software
+                Architectural Style for developing Distributed Systems. REST does not dictate what kind of technology or
+                networking protocol to use. </DIV>
+            <BR>
+            <BR>
+            <BUTTON class="btn btn-info question" type="button" data-toggle="collapse" data-target="#q2"><SPAN class="glyphicon glyphicon-plus" 
+onclick="$(this).toggleClass('glyphicon-plus');$(this).toggleClass('glyphicon-minus');"></SPAN> 
+           &nbsp;             What are resources in a REST architecture?         </BUTTON>
+            <DIV class="collapse" id="q2"> Fundamental to REST is the concept of resource.
+                <ul>
+                    <li>A resource is anything that can be accessed or manipulated.</li>
+                    <li>Example of Resource is : Image, Video, Blog entries, User profiles, a person, a device etc.</li>
+                    <li>A resource can be related to corresponding other resources, for example a customer can place order, so
+                        customer and order are related. </li>
+                    <li>Resources can be grouped in a collection, for example orders is a collection of individual ‘order’ resources.</li>
+
+            </DIV>
+            <BR>
+            <BR>
+            <H2>Implementing REST</H2>
+            <BUTTON class="btn btn-info question" type="button" data-toggle="collapse" data-target="#q3"><SPAN class="glyphicon glyphicon-plus" 
+onclick="$(this).toggleClass('glyphicon-plus');$(this).toggleClass('glyphicon-minus');"></SPAN> 
+           &nbsp;            What are the HTTP methods supported by REST?         </BUTTON>
+            <DIV class="collapse" id="q3"> 
+                HTTP methods supported by REST are:
+<ul>
+<li><b>GET:</b> Provides a read only access to a resource.</li>
+<li><b>POST:</b> It is used to create a new resource.</li>
+<li><b>PUT:</b> It is used to modify the resource.</li>
+<li><b>DELETE:</b> It is used to remove the resource.</li>
+<li><b>OPTIONS:</b> Used to get the list of supported operations on a resource.</li>
+<li><b>HEAD:</b> Returns only HTTP Header, no Body.</li></ul>
+            </DIV>
+            <BR>
+            <BR>
+            <BUTTON class="btn btn-info question" type="button" data-toggle="collapse" data-target="#q4"><SPAN class="glyphicon glyphicon-plus" onclick="$(this).toggleClass('glyphicon-plus');$(this).toggleClass('glyphicon-minus');"></SPAN> 
+           &nbsp;            What is an idempotent operation? 
+    </BUTTON>
+            <DIV class="collapse" id="q4"> Idempotent operations means their result will always same no matter how many times these operations are invoked.
+            </DIV>
+            <BR>
+            <BR>
+            <BUTTON class="btn btn-info question" type="button" data-toggle="collapse" data-target="#q5"><SPAN class="glyphicon glyphicon-plus" onclick="$(this).toggleClass('glyphicon-plus');$(this).toggleClass('glyphicon-minus');"></SPAN> 
+           &nbsp;           Can you explain a little bit about JAX-RS?    
+     </BUTTON>
+            <DIV class="collapse" id="q5"> 
+                JAX-RS is the JEE Specification for Restful web services implemented by all JEE compliant web servers (and application servers).
+                <br><br>
+                <b>Important Annotations:</b><br>
+                <ul>
+                    <li>@ApplicationPath("/"). @Path("users") : used on class and methods to define the url path.</li>
+                    <li>@GET @POST : Used to define the HTTP method that invokes the method.</li>
+                    <li>@Produces(MediaType.APPLICATION_JSON) : Defines the output format of Restful service.</li>
+                    <li>@Path("/{id}") on method (and) @PathParam("id") on method parameter : This helps in defining a dynamic parameter in Rest URL. @Path("{user_id}/followers/{follower_id}") is a more complicated example.</li>
+                    <li>@QueryParam("page") : To define a method parameter ex: /users?page=10.</li>
+                </ul>
+            </DIV>
+            <BR>
+            <BR>
+            <BUTTON class="btn btn-info question" type="button" data-toggle="collapse" data-target="#q6"><SPAN class="glyphicon glyphicon-plus" 
+onclick="$(this).toggleClass('glyphicon-plus');$(this).toggleClass('glyphicon-minus');"></SPAN> 
+           &nbsp;            What are frameworks available to implement REST web services?  
+         </BUTTON>
+            <DIV class="collapse" id="q6"> 
+                The following are JAX-RS compliant frameworks for creating REST web services:
+                <ul>
+                    <li>Jersey REST</li>
+                    <li>Apache CXF</li>
+                    <li>RESTEasy (from JBoss)</li>
+                    <li>Restlet</li>
+                </ul>
+                Apart from JAX-RS based frameworks, there are some non-standard Java REST Frameworks (which do not abide by JAX-RS specification)
+                <ul>
+                    <li>RESTX</li>
+                    <li>Spark</li>
+                    <li>Play</li>
+                </ul>
+            </DIV>
+            <BR>
+            <BR>
+            <H2>Leveraging STAR for Microservices</H2>
+            <BUTTON class="btn btn-info question" type="button" data-toggle="collapse"
+                data-target="#q7"><SPAN class="glyphicon glyphicon-plus" 
+onclick="$(this).toggleClass('glyphicon-plus');$(this).toggleClass('glyphicon-minus');"></SPAN> 
+           &nbsp;            How can I leverage STAR in the Microservices 
+initiative?         </BUTTON>
+            <DIV class="collapse" id="q7"> You can leverage us to talk to your clients, conduct sessions for them on Microservices, convince them, lead
+                short POCs to articulate benefits and return on investment. You can also leverage STAR to help you with RFPs
+                and Presales. </DIV>
+            <BR>
+            <BR>
+            <BUTTON class="btn btn-info question" type="button" data-toggle="collapse" data-target="#q8"><SPAN class="glyphicon glyphicon-plus" 
+onclick="$(this).toggleClass('glyphicon-plus');$(this).toggleClass('glyphicon-minus');"></SPAN> 
+           &nbsp;            Any other question?         </BUTTON>
+            <DIV class="collapse" id="q8"> Please do connect back with us with your questions and comments at
+                <A href="mailto:mahesh_kp@infosys.com">Connect 
+with STAR</A> </DIV>
+            <BR>
+            <BR>
+        </DIV>
+    </DIV>
+    <SCRIPT>
+    function toggleQuestion(object) {
+        alert('hello' + object);
+        object.attr("class", "glyphicon glyphicon-plus");
+
+    }
+</SCRIPT>
+    <!-- START THE FEATURETTES -->
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="frameworks/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+    <!-- <script src="./dist/js/bootstrap.min.js"></script> -->
+    <script src="frameworks/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+
+    <SCRIPT>
+    $(document).ready(function () {
+
+        $.ajax({
+            url: '/microsites/rest/micrositevisitor/updateVisitorStats?micrositeName=rest',
+            type: 'GET',
+            success: function (result) {
+                console.log("visit updated in DB");
+            }
+        });
+
+        $.ajax({
+            url: '/microsites/rest/micrositepagevisit/insertPageStats?pageName=FAQs&visitType=Page%20Visit&siteName=rest',
+            type: 'GET',
+            success: function (result) {
+                console.log("page type updated in DB");
+            }
+        });
+
+
+    });
+
+</SCRIPT>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="./assets/js/ie10-viewport-bug-workaround.js"></script> -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</BODY>
+
+</HTML>

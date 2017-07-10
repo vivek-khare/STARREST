@@ -1,0 +1,18 @@
+.custom-circle {
+	background-color: yellow;
+}
+.c1 {
+	color: orange;
+}
+.question {
+	border: 0px solid maroon; border-image: none; width: 100%; text-align: left; color: white; background-color: rgb(76, 0, 76);
+}
+h2 {
+	color: maroon;
+}
+table th tr td {
+	border: 1px solid maroon; border-image: none; color: red;
+}
+.collapse {
+	padding-right: 15px; padding-left: 15px;
+}
